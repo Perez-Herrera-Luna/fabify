@@ -9,6 +9,17 @@ const SYMBOLS = {
   "{u}": "fab_icons/icon_u.png",
 };
 
+const SYMBOLS_TITLE = {
+  "{p}": "Power",
+  "{r}": "Resource Point",
+  "{d}": "Defense Value",
+  "{h}": "Life",
+  "{i}": "Intellect",
+  "{c}": "Chi Point",
+  "{t}": "Tap",
+  "{u}": "Untap",
+};
+
 function replaceText(node) {
   if (node.nodeType === Node.TEXT_NODE) {
     let text = node.nodeValue;
@@ -37,15 +48,15 @@ function replaceText(node) {
 
       // Create image
       const img = document.createElement("img");
-      img.src = browser.runtime.getURL(SYMBOLS[matchKey]);
+      img.src = chrome.runtime.getURL(SYMBOLS[matchKey]);
       img.style.height = "1em";
       img.style.width = "auto";
       img.style.display = "inline-block";
       img.style.verticalAlign = "-0.15em";
       img.style.margin = "0 0.05em";
 
-      img.alt = matchKey;
-      img.title = matchKey;
+      img.alt = SYMBOLS_TITLE[matchKey];
+      img.title = SYMBOLS_TITLE[matchKey];
       img.className = "fab-symbol";
 
       fragment.appendChild(img);
