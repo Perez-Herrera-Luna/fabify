@@ -1,3 +1,8 @@
+# Distribution files
+*.zip
+*.tar.gz
+*.7z
+
 # Logs
 logs
 *.log
