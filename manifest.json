@@ -3,7 +3,7 @@
   "name": "Fabify",
   "version": "1.2",
 
-  "description": "Fabify is a browser extension for replacing typed symbols with corresponding icons on the official Flesh and Blood website (fabtcg.com).",
+  "description": "Fabify is a browser extension for replacing typed symbols with corresponding icons on the official Flesh and Blood website.",
 
   "icons": {
     "16": "icons/fabify-icon-16.png",
