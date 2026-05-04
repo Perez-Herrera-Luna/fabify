@@ -48,7 +48,7 @@ function replaceText(node) {
 
       // Create image
       const img = document.createElement("img");
-      img.src = chrome.runtime.getURL(SYMBOLS[matchKey]);
+      img.src = browser.runtime.getURL(SYMBOLS[matchKey]);
       img.style.height = "1em";
       img.style.width = "auto";
       img.style.display = "inline-block";
